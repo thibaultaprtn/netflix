@@ -3,6 +3,8 @@ import movies from "./assets/data/movies.json";
 import Section from "./assets/components/Section";
 import Header from "./assets/components/Header";
 import Footer from "./assets/components/Footer";
+import Sections from "./assets/components/Sections";
+
 function App() {
   // console.log(movies);
   return (
@@ -22,7 +24,7 @@ function App() {
       })} */}
 
       {/* Utilisation Section */}
-      {movies.map((elem, index) => {
+      {/* {movies.map((elem, index) => {
         return (
           <>
             <Section
@@ -32,7 +34,10 @@ function App() {
             />
           </>
         );
-      })}
+      })} */}
+
+      <Sections data={movies} />
+
       <Footer />
     </>
   );

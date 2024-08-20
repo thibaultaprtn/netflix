@@ -67,19 +67,11 @@ header img {
   margin-bottom: 40px;
 }
 
-/* .section-2 .carrousel {
-  display: flex;
-  overflow: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-} */
-/* .carrousel::-webkit-scrollbar {
-  display: none;
-} */
-
 .carroussel div {
+  flex-shrink: 0;
   height: 124px;
-  aspect-ratio: calc(220 / 124);
+  /* aspect-ratio: calc(220 / 124); */
+  width: 220px;
 }
 
 .carroussel div > img {
